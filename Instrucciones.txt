@@ -1,0 +1,9 @@
+1. Abrir Cmd e ir a la direccion vip/Scripts y aplicar el comando activate
+para activar el ambiente virtual
+
+2. En cmd dirigirse a vipress ( donde esta el archivo manage.py ) y activar
+el servidor con python manage.py runserver
+
+3. Datos Usuario Admin : 
+	Nombre : admin
+	Contraseña: admin

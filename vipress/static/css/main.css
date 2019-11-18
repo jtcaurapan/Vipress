@@ -1,0 +1,235 @@
+
+body{
+  margin: 0;
+	padding: 0;
+	font-family: 'Lato',sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+
+}
+h1{
+  font-size: 2.3em;
+  line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+.container-header{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-all{
+  width: 50%;
+  padding-left: 80px;
+}
+.crearseminario{
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.main-lista{
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+.main-paginas{
+  padding-top: 80px;
+  padding-bottom: 200px;
+  background: #333;
+  color: #bdbdbd;
+
+}
+.suscribirse{
+  padding-left: 80px;
+}
+
+.header-tp{
+  background: #3b3c36;
+  color:white;
+  padding: 1rem 0;
+  position: fixed;
+  left:0;
+  top:0;
+  right: 0;
+  text-decoration: none;
+  z-index: 20; /* el de mayot valor superpone al otro*/
+  opacity: 0.75;
+
+}
+  .header-tp a{
+    color: white;
+    text-decoration: none;
+  }
+.logo-nav-container{
+  /*
+  space betewwn los elementos que estan como flex se vayan
+   uno a la izquiera y el otro a la derecha
+   align items center: deja los items equelibrados
+   flex-wrap= wrap lo que tiene mas ancho lo pase abajo
+  */
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo{
+  letter-spacing: 8px;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 3px;
+  width: 50px;
+  border-radius: 10px;
+}
+.logo:hover{
+  text-decoration: none;
+  color: black;
+
+}
+.menu-icon{
+  display:none;
+}
+
+.contenedor-texto-carrusel{
+  background-color: #333;
+  opacity: 0.6;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.img-maxheight-portada{
+  max-height: 500px !important;
+
+}
+.img-maxheight{
+  max-height: 150px !important;
+  height: auto;
+  width: 100%;
+}
+.container-ts {
+    padding: 80px 120px;
+
+}
+.bg-1 {
+    background: #3b3c36;
+    color: #bdbdbd;
+
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+.thumbnail-ts{
+    padding: 0 0 15px 0;
+    border: none;
+    background: white;
+  }
+
+  .thumbnail-ts p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #3b3c36;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #3b3c36;
+    background-color: #fff;
+    color: #000;
+  }
+.navigation ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .navigation ul li{
+    display: inline-block;
+  }
+    .navigation ul li a{
+      display: block;
+      padding: 0.5rem 1rem;
+      transition: all 0.4s linear; /* anima el menu */
+      border-radius: 5px;
+    }
+      .navigation ul li a:hover{
+        background: #42816D;
+        text-decoration: none;
+        color: white;
+      }
+
+#bodycolor{
+  background-color: #f2f2f2;
+	}
+  .container-Suscripcion{
+    color: black;
+  }
+.img-contenedor{
+  padding-left: 800px;
+  padding-bottom: 100px;
+}
+.container-login{
+  padding-top: 20px;
+}
+.footer{
+  background: #f2f2f2;
+  color: #3b3c36;
+  text-align: center;
+  margin-top:2rem;
+}
+@media only screen and (max-width:500px){
+  .carousel-tamaño{
+    width:100%;
+    max-height: 10px !important;
+  }
+}
+@media only screen and (max-width:900px){
+  .carousel-tamaño{
+    width:100%;
+    max-height: 250px !important;
+  }
+
+  .menu-icon{
+    display: block;
+    cursor: pointer; /*mustra la posibilidad de hacer click */
+    padding: 0.5rem 1rem;
+
+  }
+    .navigation{
+      width:100%;
+      margin-top: 0;
+    }
+    .navigation ul{
+      display:none;
+    }
+    .navigation ul.show{
+      display: block;
+      list-style: none;
+    }
+    .navigation ul li{
+      display: block;
+      border-bottom: solid white 1px;
+    }
+      .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear; /* anima el menu */
+        border-radius: 5px;
+      }
+        .navigation ul li a:hover{
+          background: #42816D;
+          text-decoration: none;
+          color: white;
+        }
+}

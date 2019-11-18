@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+<main>
+<div class="main-paginas">
+  <div class="crearseminario">
+    <form method="post" class="crearseminario">
+      {% csrf_token %}
+      <h3>¿Desea eliminar el seminario titulado "{{ seminario.titulo }}" ?</h3>
+      <button class="btn btn-danger" type="Submit">Si, eliminar</button>
+      <a class="btn btn-default" href="{% url 'seminario:seminario_listar' %}">Cancelar</a>
+    </form>
+  </div>
+</div>
+</main>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+<div class="main-lista">
+  <table class="table table-bordered table-condensed">
+      <thead>
+          <tr>
+              <td>#</td>
+              <td>Titulo</td>
+              <td>Duracion</td>
+              <td>Cantidad de Participantes</td>
+              <td>Fecha Seminario</td>
+              <td>Ubicacion</td>
+              <td>Acciones</td>
+          </tr>
+      </thead>
+      <tbody>
+        {% if seminarios %}
+        {% for seminario in seminarios %}
+          <tr>
+              <td>{{seminario.id}}</td>
+              <td>{{seminario.titulo}}</td>
+              <td>{{seminario.duracion}}</td>
+              <td>{{seminario.Cantidad_participantes}}</td>
+              <td>{{seminario.fecha}}</td>
+              <td>{{seminario.direccion}}</td>
+              <td>
+                <a class="btn btn-primary" href="{% url 'seminario:seminario_editar' seminario.id %}">Editar</a>
+                <a class="btn btn-danger" href="{% url 'seminario:seminario_eliminar' seminario.id %}">Eliminar</a>
+              </td>
+          </tr>
+        {% endfor %}
+        {% else %}
+        <h2>No existen registros</h2>
+        {% endif %}
+      </tbody>
+  </table>
+</div>
+
+{% endblock %}
