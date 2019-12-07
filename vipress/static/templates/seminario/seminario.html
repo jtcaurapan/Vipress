@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+{% load staticfiles %}
+<main>
+<div class="main-paginas">
+  <div class="crearseminario">
+    <form method="post" class="crearseminario">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="Submit" name="button">Guardar</button>
+    </form>
+  </div>
+</div>
+</main>
+{% endblock %}
