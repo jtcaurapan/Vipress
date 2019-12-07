@@ -39,5 +39,5 @@ function BtnVerMas(){
 
 function IrSeminarios(){
 
-  return location.href="/seminario";
+  return location.href="/seminario/nuevo";
 }
